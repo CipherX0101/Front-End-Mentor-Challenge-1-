@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Social links profile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --background-color: hsl(0, 0%, 8%);
+      --card-color: hsl(0, 0%, 12%);
+      --buttons-color: hsl(0, 0%, 20%);
+      --text-color: hsl(0, 0%, 100%);
+      --accent-color: hsl(75, 94%, 57%);
+    }
+
+    html {
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: var(--background-color);
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 300px;
+      width: 100%;
+      padding: 30px;
+      background-color: var(--card-color);
+      border-radius: 10px;
+    }
+
+    .header-img {
+      display: flex;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+    }
+
+    .header-title {
+      font-size: 1.5rem;
+      color: var(--text-color);
+      margin-bottom: 5px;
+      text-align: center;
+    }
+
+    .header-subtitle {
+      color: var(--accent-color);
+      text-align: center;
+    }
+
+    .header-description {
+      font-size: 0.75rem;
+      color: var(--text-color);
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: var(--buttons-color);
+      border: none;
+      border-radius: 5px;
+      color: var(--text-color);
+      transition: 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: var(--accent-color);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <img src="assets/images/avatar-me.png" alt="Profile" class="header-img">
+      <h1 class="header-title">CipherX0101</h1>
+      <p class="header-subtitle">Coding Universe</p>
+      <p class="header-description">"Aspiring Frontend Web Developer"</p>
+    </div>
+    <div class="social-links">
+      <button>Github</button>
+      <button>FrontEnd Mentor</button>
+      <button>Linkedin</button>
+      <button>Twitter</button>
+      <button>Instagram</button>
+    </div>
+  </div>
+</body>
+</html>
